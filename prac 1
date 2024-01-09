@@ -1,0 +1,144 @@
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT
+$ git clone https://github.com/Harshali61/Test2.git
+fatal: destination path 'Test2' already exists and is not an empty directory.
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT
+$ cd Test2
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git add*
+git: 'add*' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git add *
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git commit .m "added hey Nashik"
+error: pathspec '.m' did not match any file(s) known to git
+error: pathspec 'added hey Nashik' did not match any file(s) known to git
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git commit -m "added hey Nashik"
+[main a2cb4af] added hey Nashik
+ 1 file changed, 2 insertions(+)
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git config user .email "ahireharshali61@gmail.com"
+error: key does not contain a section: user
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git config user.email "ahireharshali61@gmail.com"
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git commit -m "added hey Nashik"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git push ^[[200~
+fatal: '?[200~' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git push
+https://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@github.com/Harshali61/Test2.git
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 276 bytes | 276.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Harshali61/Test2.git
+   37458a8..a2cb4af  main -> main
+bash: https://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@github.com/Harshali61/Test2.git: No such file or directory
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git push
+https://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@github.com/Harshali61/Test2.git
+Everything up-to-date
+bash: https://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@github.com/Harshali61/Test2.git: No such file or directory
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git pull
+https://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@github.com/Harshali61/Test2.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects:  33% (1/3)
+Unpacking objects: 100% (3/3), 662 bytes | 6.00 KiB/s, done.
+From https://github.com/Harshali61/Test2
+   a2cb4af..3d903d6  main       -> origin/main
+Updating a2cb4af..3d903d6
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+bash: https://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@github.com/Harshali61/Test2.git: No such file or directory
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git branch
+* main
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (main)
+$ git checkout -b harshali
+Switched to a new branch 'harshali'
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (harshali)
+$ git add *
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (harshali)
+$ git commit -m "added hey Nashik"
+[harshali aefe4df] added hey Nashik
+ 1 file changed, 1 deletion(-)
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (harshali)
+$ git push https://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@github.com/Harshali61/Test2.git
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'harshali' on GitHub by visiting:
+remote:      https://github.com/Harshali61/Test2/pull/new/harshali
+remote:
+To https://github.com/Harshali61/Test2.git
+ * [new branch]      harshali -> harshali
+
+CNL LAB@DESKTOP-ON0E0IF MINGW64 ~/Desktop/KBT/Test2 (harshali)
+$
